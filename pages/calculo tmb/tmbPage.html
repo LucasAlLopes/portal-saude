@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------- IMPORTS FONT AND ANIMATION LIB-------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!---------------------------------ICON---------------------------------->
+    <link rel="shortcut icon" href="assets/img/healthICO.png" type="image/x-icon">
+    <!-------------------------------STYLESHEETS----------------------------->
+    <link rel="stylesheet" href="assets/style/queriesTMB.css">
+    <link rel="stylesheet" href="assets/style/tmb.css">
+    <!---------------------------------TITLE--------------------------------------TITLE--------------------------------->
+    <title>Cálculo de TMB</title>
+</head>
+<body>
+    <header>
+        <div class="titulo-subtitulo" data-aos="fade-down" data-aos-delay="300">
+            <a href="../../home.html">Portal Saúde</a>
+            <p>Todas as infromações num só lugar!</p>
+        </div>
+        <nav class="paginas">
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="100" class="link">Alimentação</a>
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="300" class="link">Medicina</a>
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="500" class="link">Dicas</a>
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="700" class="link">Sobre Nós</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Porque devemos saber nossa TMB</h1>
+        <p id="paragrafo">A taxa metabólica basal, conhecida também como gasto energético basal, é a quantidade de energia que o corpo, em repouso, gasta para manter as suas funções vitais, como respiração, batimentos do coração e manutenção da temperatura corporal.</p>
+        <p id="paragrafo">Os valores da taxa metabólica basal variam de acordo com a idade, o peso e o sexo, e servem para entender o total de energia que o corpo gasta por dia, sendo uma ferramenta útil para auxiliar no planejamento alimentar de pessoas que desejam manter o peso, engordar ou emagrecer. </p>
+        <h2>Cálculo de TMB</h2>
+        <p id="paragrafo">Insira na tabela abaixo seus dados e veja sua Taxa de Metabolismo Basal</p>
+        <div class="calculadora" data-aos="flip-left">
+            <form name="form_main" id="form_main">
+                <label for="peso">Peso:</label>
+                <br>
+                <input type="text" name="peso" class="inputText" id="peso">
+                <span>Kg</span>
+                <br>
+                <label for="altura">Altura:</label>
+                <br>
+                <input type="text" name="altura" class="inputText" id="altura">
+                <span>cm</span>
+                <br>
+                <label for="idade">Idade:</label>
+                <br>
+                <input type="number" name="idade" class="inputText" id="idade">
+                <br>
+                <input type="radio" name="genero" class="inputRadio" id="homem" value="homem">
+                <label for="homem">Homem</label>
+                <br>
+                <input type="radio" name="genero" class="inputRadio" id="mulher" value="mulher">
+                <label for="mulher">Mulher</label>
+                <br>
+                <button type="button" onclick="calcular()">Resultado TMB</button>
+            </form>
+            <div class="TMBresultado">
+                <p id="resultado"></p>
+            </div>
+            <p id="mensagemErro"></p>
+        </div>
+        <details>
+            <summary>Calculo da TMB</summary>
+            <p>A fórmula para calcular o TMB varia de acordo com o gênero da pessoa:</p>
+            <br>
+            <p>Homens: TMB = 66 + (13,7 x peso em kg) + (5 x altura em cm) - (6,8 x idade em anos)</p>
+            <br>
+            <p>Mulheres: TMB = 655 + (9,6 x peso em kg) + (1,8 x altura em cm) - (4,7 x idade em anos)</p>
+        </details>
+    </div>
+    <footer>
+        <div class="titulo-subtitulo">
+            <a href="../../home.html" id="homeLink">0800-7777</a>
+            <p>Entre em contato para dúvidas!</p>
+        </div>
+        <div class="creditos">
+            <p>
+                Feito com ❤ por
+                <a href="https://github.com/LucasAlLopes" target="_blank">Lucas Lopes</a>
+            </p>
+        </div>
+        <div class="paginas">
+            <a href="../empty page/emptyPage.html" class="link">Dicas</a>
+            <a href="../empty page/emptyPage.html" class="link">Sobre Nós</a>
+        </div>
+    </footer>
+    <script src="assets/script/tmb.js"></script>
+</body>
+</html>

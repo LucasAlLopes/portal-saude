@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-------------------- IMPORTS FONT AND ANIMATION LIB-------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!---------------------------------ICON---------------------------------->
+    <link rel="shortcut icon" href="assets/img/healthICO.png" type="image/x-icon">
+    <!-------------------------------STYLESHEETS----------------------------->
+    <link rel="stylesheet" href="assets/style/imc.css">
+    <link rel="stylesheet" href="assets/style/queriesIMC.css">
+    <!---------------------------------TITLE--------------------------------->
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <header>
+        <div class="titulo-subtitulo" data-aos="fade-down" data-aos-delay="300">
+            <a href="../../home.html">Portal Saúde</a>
+            <p>Todas as infromações num só lugar!</p>
+        </div>
+        <nav class="paginas">
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="100" class="link">Alimentação</a>
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="300" class="link">Medicina</a>
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="500" class="link">Dicas</a>
+            <a href="../empty page/emptyPage.html" data-aos="fade-down" data-aos-delay="700" class="link">Sobre Nós</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>A importância de calcular o IMC</h1>
+        <p id="paragrafo">A classificação do índice de massa corporal (IMC) pode ajudar a identificar problemas de obesidade ou desnutrição, em crianças, adolescentes, adultos e idosos.</p>
+        <p id="paragrafo">Além de calcular o valor de IMC, esta calculadora também indica qual o intervalo de peso ideal que deve ter para garantir uma melhor qualidade de vida.</p>
+        <p id="paragrafo">Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar o aparecimento de várias doenças crônicas, como diabetes e hipertensão.</p>
+        <h2>Calculadora de IMC</h2>
+        <p id="paragrafo">Preencha seus dados e calcule seu IMC</p>
+        <div class="calculadora" data-aos="flip-left">
+            <form name="form_main" id="form_main">
+                <label for="peso">Peso:</label>
+                <br>
+                <input type="text" name="peso" id="peso">
+                <span>Kg</span>
+                <br>
+                <label for="altura">Altura:</label>
+                <br>
+                <input type="text" name="altura" id="altura">
+                <span>M</span>
+                <br>
+                <button type="button" onclick="calcular()">Calcular</button>
+            </form>
+            <div class="imcResultado">
+                <p id="resultado"></p>
+                <p id="classificacao"></p>
+            </div>
+            <p id="mensagemErro"></p>
+        </div>
+        <details>
+            <summary>Calculo do IMC</summary>
+            <p>
+                Para calcularmos o nosso Índice de massa corporal precisamos de dois valores: nosso peso e nossa altura.
+            </p>
+            <p>
+                A fórmula para sabermos nosso IMC é: peso / altura².
+            </p>
+        </details>
+    </div>
+    <footer>
+        <div class="titulo-subtitulo">
+            <a href="../../home.html" id="homeLink">0800-7777</a>
+            <p>Entre em contato para dúvidas!</p>
+        </div>
+        <div class="creditos">
+            <p>
+                Feito com ❤ por
+                <a href="https://github.com/LucasAlLopes" target="_blank">Lucas Lopes</a>
+            </p>
+        </div>
+        <div class="paginas">
+            <a href="../empty page/emptyPage.html" class="link">Dicas</a>
+            <a href="../empty page/emptyPage.html" class="link">Sobre Nós</a>
+        </div>
+    </footer>
+    <script src="assets/script/calcuIMC.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    align-items: center;
+    background-color: rgb(103, 103, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#homeLink {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.header p {
+    color: white;
+    margin: 5px;
+}
+
+#links {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#links:hover{
+    border-bottom: 3px solid white;
+    font-size: 22px;
+    padding: 6px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 50px;
+    margin: 5px;
+}
+
+#paragrafo {
+    font-size: 22px;
+}
+
+img {
+    width: 25%;
+    margin: 30px 0px 10px 0px;
+}
+
+.footer {
+    align-items: center;
+    background-color: rgb(103, 103, 255);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.creditos{
+    font-size: 18px;
+}
+
+.creditos a{
+    color: white;
+}
+
+
+/* Minimum size */
+@media (max-width: 280px) {
+    .header {
+        align-items: center;
+        background-color: rgb(103, 103, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #homeLink {
+        font-size: 20px;
+        margin: 5px;
+        align-items: center;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+    #links {
+        font-size: 10px;
+        margin: 8px;
+    }
+
+    .container {
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    .container h1 {
+        margin: 10px 5px 5px 5px;
+        font-size: 18px;
+    }
+
+    .container h2 {
+        margin: 10px 5px 5px 5px;
+        font-size: 15px;
+    }
+
+    #subtitulo {
+        margin: 10px 5px 10px 5px;
+        font-size: 12px;
+    }
+
+    #paragrafo {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    #linkExterno {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        margin: 10px 3px 5px 3px;
+    }
+
+    .footer {
+        padding: 5px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .creditos {
+        font-size: 12px;
+    }
+}
